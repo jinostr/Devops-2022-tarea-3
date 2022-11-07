@@ -4,6 +4,7 @@ ENV PYTHONBUFFERED 1
 
 ONBUILD RUN set -ex && mkdir /app
 
+RUN apt-get clean all
 RUN apt-get update
 
 RUN apt-get install -y locales
